@@ -1,0 +1,30 @@
+{
+  "name": "python_app_template",
+  "version": "1.0.0",
+  "description": "A template for a basic python app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "author": "Ornella Friggit",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "babel-loader": "^8.0.5"
+  }
+}
